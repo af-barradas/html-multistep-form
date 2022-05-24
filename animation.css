@@ -36,15 +36,21 @@
 }
 
 .signup-form {
+    z-index: 2;
     opacity: 0;
+    pointer-events: none;
 }
 
 .on {
+    z-index: 3;
     opacity: 1;
+    pointer-events: all;
 }
 
 .off {
+    z-index: 2;
     opacity: 0;
+    pointer-events: none;
 }
 
 .background-option img {

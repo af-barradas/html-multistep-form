@@ -24,7 +24,7 @@
 
 .option-container {
     overflow: hidden;
-    z-index: 2;
+    z-index: 11;
     position: relative;
     position: absolute;
     top: 0;
@@ -49,7 +49,7 @@
 }
 
 .signup-option {
-    z-index: 4;
+    z-index: 13;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,7 +57,7 @@
 }
 
 .background-option {
-    z-index: 3;
+    z-index: 12;
     position: absolute;
     top: -850px;
     left: -2000px;
