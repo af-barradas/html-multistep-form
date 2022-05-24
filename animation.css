@@ -1,0 +1,62 @@
+.form-container,
+.option-container,
+.background-option {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.form-container.signup {
+    transform: translate(67%);
+}
+
+.option-container.signin {
+    transform: translate(-150%);
+}
+
+.background-option.signin {
+    transform: translate(30%);
+}
+
+.form-container.signin,
+.option-container.signup,
+.background-option {
+    transform: translate(0%);
+}
+
+.signin-form,
+.signup-form {
+    transition-property: opacity;
+    transition-duration: 0s;
+    transition-delay: 0.5s;
+}
+
+.signin-form {
+    opacity: 1;
+}
+
+.signup-form {
+    opacity: 0;
+}
+
+.on {
+    opacity: 1;
+}
+
+.off {
+    opacity: 0;
+}
+
+.background-option img {
+    animation: background-rotation 60s linear infinite;
+}
+
+@keyframes background-rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
