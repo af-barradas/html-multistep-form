@@ -32,6 +32,7 @@
 }
 
 .signin-form {
+    z-index: 3;
     opacity: 1;
 }
 
@@ -65,4 +66,8 @@
     to {
         transform: rotateZ(360deg);
     }
+}
+
+.social-icon {
+    transition-duration: 0.25s;
 }
