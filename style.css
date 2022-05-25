@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+:root {
+    --blue: #0099b8;
+    --green: #4fffad;
+    --grey: #8f8698;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -59,8 +65,9 @@ body {
 
 .social-icon:hover {
     text-decoration: none;
-    background-color: rgb(93, 62, 126);
-    color: rgb(230, 164, 109);
+    background-color: var(--blue);
+    color: white;
+    border: none;
 }
 
 .fields p {
@@ -69,8 +76,8 @@ body {
 }
 
 .button-field button {
-    background-color: rgb(93, 62, 126);
-    color: rgb(230, 164, 109);
+    background-color: var(--blue);
+    color: white;
     border: none;
     border-radius: 5px;
     height: 40px;
@@ -78,4 +85,8 @@ body {
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.option-container {
+    color: white;
 }
