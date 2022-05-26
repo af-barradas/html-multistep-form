@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.page-container {
+.main-container {
     max-width: 800px;
     width: 100%;
     overflow: hidden;
