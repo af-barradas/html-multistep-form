@@ -2,7 +2,9 @@
 
 :root {
     --blue: #0099b8;
+    --dark-blue: #006074;
     --green: #4fffad;
+    --dark-green: #2f9968;
     --grey: #8f8698;
 }
 
@@ -67,7 +69,7 @@ body {
     text-decoration: none;
     background-color: var(--blue);
     color: white;
-    border: none;
+    border: var(--blue);
 }
 
 .fields p {
