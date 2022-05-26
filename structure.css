@@ -32,14 +32,7 @@
     width: 40%;
 }
 
-.signin-form,
-.signup-form {
-    transition-property: opacity;
-    transition-duration: 0s;
-    transition-delay: 0.5s;
-}
-
-.signup-form {
+.signin-form {
     position: absolute;
     top: 50%;
     left: 50%;

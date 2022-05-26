@@ -2,9 +2,9 @@
 
 :root {
     --pink: #b3112f;
-    --dark-blue: #006074;
-    --green: #4fffad;
-    --dark-green: #2f9968;
+    --dark-pink: #741b2d;
+    --brown: #a9927d;
+    --dark-brownn: #5e503f;
     --light-gray: #eeeeee;
     --gray: #aaaaaa;
     --dark-gray: #8b8b8b;
@@ -45,7 +45,7 @@ body {
 
 .form-container .title-field {
     color: var(--pink);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .fields {}
@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .social-icon {
@@ -84,9 +84,9 @@ body {
 
 .text-field {
     margin: auto;
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     margin-bottom: 10px;
     background-color: var(--light-gray);
     border-radius: 30px;
@@ -94,11 +94,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    font-size: 14px;
 }
 
 .text-field i {
     color: var(--gray);
+    font-size: 13px;
 }
 
 .text-field input {
@@ -106,8 +106,9 @@ body {
     border: none;
     outline: none;
     height: 100%;
-    max-width: 280px;
+    max-width: 230px;
     width: 100%;
+    font-size: 12px;
 }
 
 .button-field button {
@@ -115,12 +116,17 @@ body {
     color: white;
     border: none;
     border-radius: 30px;
-    height: 50px;
-    max-width: 350px;
+    height: 40px;
+    max-width: 300px;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
     outline: none;
+    font-size: 14px;
+}
+
+.button-field button:hover {
+    background-color: var(--dark-pink);
 }
 
 .option-container {
