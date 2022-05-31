@@ -15,7 +15,7 @@
 }
 
 .background-option.signin {
-    transform: translate(20%);
+    transform: translate(38%);
 }
 
 .form-container.signin,
@@ -55,7 +55,7 @@
 }
 
 .background-option img {
-    animation: background-rotation 60s linear infinite;
+    animation: background-rotation 120s linear infinite;
 }
 
 @keyframes background-rotation {
@@ -68,6 +68,7 @@
     }
 }
 
-.social-icon {
+.social-icon,
+button {
     transition-duration: 0.25s;
 }

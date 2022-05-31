@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root {
-    --pink: #b3112f;
-    --dark-pink: #67091b;
+    --pink: #d13753;
+    --dark-pink: #b12d45;
     --brown: #ebc891;
-    --dark-brown: #907358;
+    --dark-brown: #e9c083;
     --light-gray: #eeeeee;
     --gray: #aaaaaa;
     --dark-gray: #8b8b8b;
@@ -41,12 +41,10 @@ body {
     text-align: center;
 }
 
-.form-container .title-field {
+.form-container .title-form {
     color: var(--pink);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
-
-.fields {}
 
 .social-field {
     display: flex;
@@ -126,7 +124,7 @@ body {
 
 .button-field button {
     background-color: var(--pink);
-    color: white;
+    color: var(--white);
     border: none;
     border-radius: 30px;
     height: 40px;
@@ -144,5 +142,31 @@ body {
 
 .option-container {
     color: black;
+}
+
+.background-option {
     background-color: var(--brown);
+}
+
+.button-option {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+.button-option:hover {
+    background-color: var(--white);
+    color: var(--brown);
+    border: 1px solid var(--dark-brown);
+}
+
+.button-option:focus {
+    outline: none;
 }
