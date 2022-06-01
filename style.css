@@ -141,7 +141,7 @@ body {
 }
 
 .option-container {
-    color: black;
+    color: var(--white);
 }
 
 .background-option {
@@ -164,7 +164,7 @@ body {
 .button-option:hover {
     background-color: var(--white);
     color: var(--brown);
-    border: 1px solid var(--dark-brown);
+    border: 1px solid var(--white);
 }
 
 .button-option:focus {
