@@ -7,7 +7,7 @@
 .main-container {
     max-width: 800px;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -47,6 +47,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 100%;
+}
+
+.signin-option {
+    z-index: 13;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 100%;
 }
 
 .background-option {

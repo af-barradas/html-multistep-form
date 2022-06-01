@@ -19,7 +19,7 @@
 <body>
     <div class="main-container">
         <div class="form-container signin" id="form-container">
-            <div class="signin-form" id="signin-form">
+            <div class="signin-form on" id="signin-form">
                 <h2 class="title-form">Sign In</h2>
                 <div class="fields">
                     <div class="social-field">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="signup-form" id="signup-form">
+            <div class="signup-form off" id="signup-form">
                 <h2 class="title-form">Sign Up</h2>
                 <div class="fields">
                     <div class="social-field">
@@ -72,11 +72,15 @@
             </div>
         </div>
         <div class="option-container signup" id="option-container">
-            <div class="signup-option">
+            <div class="signup-option on" id="signup-option">
                 <h2 class="title-option">are you new here?</h2>
                 <p class="description-option">Sign up</p>
                 <button class="button-option" onclick="activateSignUpForm()">Sign Up</button>
-                <!-- <button onclick="activateSignInForm()">Sign In</button> -->
+            </div>
+            <div class="signin-option off" id="signin-option">
+                <h2 class="title-option">are you new here?</h2>
+                <p class="description-option">Sign up</p>
+                <button class="button-option" onclick="activateSignInForm()">Sign In</button>
             </div>
             <div class="background-option signup" id="background-option">
                 <img src="background.png">

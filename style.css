@@ -9,6 +9,7 @@
     --gray: #aaaaaa;
     --dark-gray: #8b8b8b;
     --white: #f2f4f3;
+    --dark-white: #c4c4c4;
 }
 
 * {
@@ -44,6 +45,7 @@ body {
 .form-container .title-form {
     color: var(--pink);
     margin-bottom: 40px;
+    text-shadow: 1px 1px var(--dark-white);
 }
 
 .social-field {
@@ -134,6 +136,7 @@ body {
     letter-spacing: 2px;
     outline: none;
     font-size: 14px;
+
 }
 
 .button-field button:hover {
@@ -142,11 +145,14 @@ body {
 
 .option-container {
     color: var(--white);
+    text-shadow: 1px 1px var(--dark-white);
 }
 
 .background-option {
     background-color: var(--brown);
 }
+
+
 
 .button-option {
     background-color: transparent;
@@ -156,6 +162,7 @@ body {
     height: 40px;
     width: 100%;
     text-transform: uppercase;
+    text-shadow: 1px 1px var(--dark-white);
     letter-spacing: 2px;
     outline: none;
     font-size: 14px;
@@ -165,6 +172,7 @@ body {
     background-color: var(--white);
     color: var(--brown);
     border: 1px solid var(--white);
+    text-shadow: none;
 }
 
 .button-option:focus {

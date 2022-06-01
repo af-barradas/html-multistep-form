@@ -1,14 +1,18 @@
 function activateSignInForm() {
     // Creating variables
-    let signinForm = document.getElementById("signin-form");
-    let signupForm = document.getElementById("signup-form");
-    let formContainer = document.getElementById("form-container");
-    let optionContainer = document.getElementById("option-container");
-    let backgroundOption = document.getElementById("background-option");
+    const signinForm = document.getElementById("signin-form");
+    const signupForm = document.getElementById("signup-form");
+    const signupOption = document.getElementById("signup-option");
+    const signinOption = document.getElementById("signin-option");
+    const formContainer = document.getElementById("form-container");
+    const optionContainer = document.getElementById("option-container");
+    const backgroundOption = document.getElementById("background-option");
 
     // Applying values
     signinForm.classList.remove("off");
     signupForm.classList.remove("on");
+    //signupOption.classList.remove();
+
     signinForm.classList.add("on");
     signupForm.classList.add("off");
 
@@ -23,15 +27,20 @@ function activateSignInForm() {
 
 function activateSignUpForm() {
     // Creating variables
-    let signinForm = document.getElementById("signin-form");
-    let signupForm = document.getElementById("signup-form");
-    let formContainer = document.getElementById("form-container");
-    let optionContainer = document.getElementById("option-container");
-    let backgroundOption = document.getElementById("background-option");
+    const signinForm = document.getElementById("signin-form");
+    const signupForm = document.getElementById("signup-form");
+    const signupOption = document.getElementById("signup-option");
+    const signinOption = document.getElementById("signin-option");
+    const formContainer = document.getElementById("form-container");
+    const optionContainer = document.getElementById("option-container");
+    const backgroundOption = document.getElementById("background-option");
 
     // Applying values
     signinForm.classList.remove("on");
     signupForm.classList.remove("off");
+    //signupOption.classList.remove();
+
+    signupOption.classList.add("move-right-option");
     signinForm.classList.add("off");
     signupForm.classList.add("on");
 

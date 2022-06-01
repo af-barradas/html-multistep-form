@@ -25,13 +25,15 @@
 }
 
 .signin-form,
-.signup-form {
+.signup-form,
+.signin-option,
+.signup-option {
     transition-property: opacity;
     transition-duration: 0s;
     transition-delay: 0.5s;
 }
 
-.signin-form {
+/* .signin-form {
     z-index: 3;
     opacity: 1;
 }
@@ -39,17 +41,16 @@
 .signup-form {
     z-index: 2;
     opacity: 0;
-    pointer-events: none;
-}
+} */
 
 .on {
-    z-index: 3;
+    z-index: 13;
     opacity: 1;
     pointer-events: all;
 }
 
 .off {
-    z-index: 2;
+    z-index: 11;
     opacity: 0;
     pointer-events: none;
 }
@@ -66,6 +67,23 @@
     to {
         transform: rotateZ(360deg);
     }
+}
+
+.signin-option {
+    transition-property: right;
+    transition-duration: 0.75s;
+    /* transition-delay: 0.75s; */
+    transition-timing-function: ease-in-out;
+}
+
+.signup-option {
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+}
+
+.move-right-option {
+    transform: translate(150%, -50%);
 }
 
 .social-icon,
