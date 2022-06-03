@@ -155,24 +155,19 @@ body {
 }
 
 .button-option {
+    position: relative;
     background-color: transparent;
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 30px;
     height: 40px;
+    max-width: 150px;
     width: 100%;
     text-transform: uppercase;
     text-shadow: 1px 1px var(--dark-white);
     letter-spacing: 2px;
     outline: none;
     font-size: 14px;
-}
-
-.button-option:hover {
-    background-color: var(--white);
-    color: var(--brown);
-    border: 1px solid var(--white);
-    text-shadow: none;
 }
 
 .button-option:focus {
