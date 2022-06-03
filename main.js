@@ -11,10 +11,19 @@ function activateSignInForm() {
     // Applying values
     signinForm.classList.remove("off");
     signupForm.classList.remove("on");
-    //signupOption.classList.remove();
+
+    signupOption.classList.remove("off");
+    signinOption.classList.remove("on");
+    signupOption.classList.remove("move-right");
+    signinOption.classList.remove("move-right");
 
     signinForm.classList.add("on");
     signupForm.classList.add("off");
+
+    signupOption.classList.add("on");
+    signinOption.classList.add("off");
+    signupOption.classList.add("move-left");
+    signinOption.classList.add("move-left");
 
     formContainer.classList.remove("signup");
     optionContainer.classList.remove("signin");
@@ -38,11 +47,19 @@ function activateSignUpForm() {
     // Applying values
     signinForm.classList.remove("on");
     signupForm.classList.remove("off");
-    //signupOption.classList.remove();
 
-    signupOption.classList.add("move-right-option");
+    signupOption.classList.remove("on");
+    signinOption.classList.remove("off");
+    signupOption.classList.remove("move-left");
+    signinOption.classList.remove("move-left");
+
     signinForm.classList.add("off");
     signupForm.classList.add("on");
+
+    signupOption.classList.add("off");
+    signinOption.classList.add("on");
+    signupOption.classList.add("move-right");
+    signinOption.classList.add("move-right");
 
     formContainer.classList.remove("signin");
     optionContainer.classList.remove("signup");

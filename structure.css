@@ -37,6 +37,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .wrapper {
@@ -57,7 +58,7 @@
 
 .signin-option {
     position: absolute;
-    transform: translate(-50%);
+    transform: translate(-150%);
 }
 
 .background-option {
