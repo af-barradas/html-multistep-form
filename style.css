@@ -152,7 +152,11 @@ body {
     background-color: var(--brown);
 }
 
-
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .button-option {
     background-color: transparent;

@@ -69,10 +69,10 @@
     }
 }
 
-.signin-option {
+/* .signin-option {
     transition-property: right;
     transition-duration: 0.75s;
-    /* transition-delay: 0.75s; */
+    transition-delay: 0.75s;
     transition-timing-function: ease-in-out;
 }
 
@@ -80,7 +80,7 @@
     transition-property: transform;
     transition-duration: 5s;
     transition-timing-function: linear;
-}
+} */
 
 .move-right-option {
     transform: translate(150%, -50%);
