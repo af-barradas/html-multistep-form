@@ -30,16 +30,12 @@ body {
     background-color: var(--white);
 }
 
-.form-container,
-.option-container {
-    padding: 40px;
-}
-
 .signin-form,
 .signup-form,
 .signin-option,
 .signup-option {
     text-align: center;
+    padding: 40px 20px;
 }
 
 .form-container .title-form {
