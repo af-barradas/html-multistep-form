@@ -142,6 +142,7 @@ body {
 .option-container {
     color: var(--white);
     text-shadow: 1px 1px var(--dark-white);
+    /* letter-spacing: 1px; */
 }
 
 .background-option {

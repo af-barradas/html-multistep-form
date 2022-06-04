@@ -53,12 +53,14 @@
 
 .signup-option {
     position: absolute;
-    /* transform: translate(150%); */
+    transform: translate(150%);
+    pointer-events: none;
 }
 
 .signin-option {
     position: absolute;
     transform: translate(-150%);
+    pointer-events: none;
 }
 
 .background-option {

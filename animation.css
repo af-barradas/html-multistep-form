@@ -25,9 +25,7 @@
 }
 
 .signin-form,
-.signup-form,
-.signin-option,
-.signup-option {
+.signup-form {
     transition-property: opacity;
     transition-duration: 0s;
     transition-delay: 0.5s;
@@ -73,25 +71,12 @@
 
 @keyframes signup-move-right {
     from {
+        pointer-events: none;
         transform: translate(0%);
     }
 
     to {
         transform: translate(150%);
-    }
-}
-
-.signin-option.move-right {
-    animation: signin-move-right 0.75s ease-in-out 0.25s forwards;
-}
-
-@keyframes signin-move-right {
-    from {
-        transform: translate(-150%);
-    }
-
-    to {
-        transform: translate(0%);
     }
 }
 
@@ -100,11 +85,35 @@
 }
 
 @keyframes signup-move-left {
-    from {
+    0% {
         transform: translate(150%);
     }
 
-    to {
+    99% {
+        pointer-events: none;
+    }
+
+    100% {
+        pointer-events: all;
+        transform: translate(0%);
+    }
+}
+
+.signin-option.move-right {
+    animation: signin-move-right 0.75s ease-in-out 0.25s forwards;
+}
+
+@keyframes signin-move-right {
+    0% {
+        transform: translate(-150%);
+    }
+
+    99% {
+        pointer-events: none;
+    }
+
+    100% {
+        pointer-events: all;
         transform: translate(0%);
     }
 }
@@ -125,5 +134,6 @@
 
 .social-icon,
 button {
+    pointer-events: inherit;
     transition-duration: 0.25s;
 }

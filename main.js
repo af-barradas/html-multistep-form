@@ -12,16 +12,12 @@ function activateSignInForm() {
     signinForm.classList.remove("off");
     signupForm.classList.remove("on");
 
-    signupOption.classList.remove("off");
-    signinOption.classList.remove("on");
     signupOption.classList.remove("move-right");
     signinOption.classList.remove("move-right");
 
     signinForm.classList.add("on");
     signupForm.classList.add("off");
 
-    signupOption.classList.add("on");
-    signinOption.classList.add("off");
     signupOption.classList.add("move-left");
     signinOption.classList.add("move-left");
 
@@ -48,16 +44,12 @@ function activateSignUpForm() {
     signinForm.classList.remove("on");
     signupForm.classList.remove("off");
 
-    signupOption.classList.remove("on");
-    signinOption.classList.remove("off");
     signupOption.classList.remove("move-left");
     signinOption.classList.remove("move-left");
 
     signinForm.classList.add("off");
     signupForm.classList.add("on");
 
-    signupOption.classList.add("off");
-    signinOption.classList.add("on");
     signupOption.classList.add("move-right");
     signinOption.classList.add("move-right");
 
