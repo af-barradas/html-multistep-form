@@ -69,3 +69,35 @@
     top: -300px;
     right: -240px;
 }
+
+/* Responsive adaptions */
+
+@media all and (max-width: 700px) {
+    .main-container {
+        max-width: 400px;
+    }
+
+    .form-container,
+    .option-container {
+        width: 100%;
+    }
+
+    .form-container {
+        height: 80%;
+    }
+
+    .option-container {
+        overflow: hidden;
+        z-index: 11;
+        position: relative;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+    }
+
+    .option-container {
+        bottom: 0;
+        height: 20%;
+    }
+}

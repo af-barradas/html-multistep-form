@@ -60,7 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: var(--dark-gray);
 }
 
 .social-icon:hover {
