@@ -1,0 +1,142 @@
+@media all and (min-width: 701px) {
+
+    .form-container,
+    .option-container,
+    .background-option {
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .form-container.signup {
+        transform: translate(67%);
+    }
+
+    .option-container.signin {
+        transform: translate(-150%);
+    }
+
+    .background-option.signin {
+        transform: translate(38%);
+    }
+
+    .form-container.signin,
+    .option-container.signup,
+    .background-option {
+        transform: translate(0%);
+    }
+
+    .signin-form,
+    .signup-form {
+        transition-property: opacity;
+        transition-duration: 0s;
+        transition-delay: 0.5s;
+    }
+
+    /* .signin-form {
+    z-index: 3;
+    opacity: 1;
+}
+
+.signup-form {
+    z-index: 2;
+    opacity: 0;
+} */
+
+    .on {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .off {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .background-option img {
+        animation: background-rotation 120s linear infinite;
+    }
+
+    @keyframes background-rotation {
+        from {
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    .signup-option.move-right {
+        animation: signup-move-right 0.75s ease-in-out 0s forwards;
+    }
+
+    @keyframes signup-move-right {
+        from {
+            pointer-events: none;
+            transform: translate(0%);
+        }
+
+        to {
+            transform: translate(150%);
+        }
+    }
+
+    .signup-option.move-left {
+        animation: signup-move-left 0.75s ease-in-out 0.25s forwards;
+    }
+
+    @keyframes signup-move-left {
+        0% {
+            transform: translate(150%);
+        }
+
+        99% {
+            pointer-events: none;
+        }
+
+        100% {
+            pointer-events: all;
+            transform: translate(0%);
+        }
+    }
+
+    .signin-option.move-right {
+        animation: signin-move-right 0.75s ease-in-out 0.25s forwards;
+    }
+
+    @keyframes signin-move-right {
+        0% {
+            transform: translate(-150%);
+        }
+
+        99% {
+            pointer-events: none;
+        }
+
+        100% {
+            pointer-events: all;
+            transform: translate(0%);
+        }
+    }
+
+    .signin-option.move-left {
+        animation: signin-move-left 0.75s ease-in-out 0s forwards;
+    }
+
+    @keyframes signin-move-left {
+        from {
+            transform: translate(0%);
+        }
+
+        to {
+            transform: translate(-150%);
+        }
+    }
+
+    .social-icon,
+    button {
+        pointer-events: inherit;
+        transition-duration: 0.25s;
+    }
+}
