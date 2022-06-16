@@ -6,6 +6,13 @@
 
 /*  */
 @media all and (min-width: 701px) {
+    .desktop {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
 
     .main-container {
         max-width: 800px;

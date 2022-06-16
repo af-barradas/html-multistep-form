@@ -19,8 +19,33 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container desktop">
         <div class="form-container signin" id="form-container">
+            <div class="signin-form on" id="signin-form">
+                <h2 class="title-form">Sign In</h2>
+                <div class="fields">
+                    <div class="social-field">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <p>or sign in with your own credentials:</p>
+                    <div class="text-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="text-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <div class="button-field">
+                        <button>Sign In</button>
+                    </div>
+                </div>
+            </div>
             <div class="signup-form off" id="signup-form">
                 <h2 class="title-form">Sign Up</h2>
                 <div class="fields">
@@ -51,29 +76,53 @@
                     </div>
                 </div>
             </div>
-            <div class="signin-form on" id="signin-form">
-                <h2 class="title-form">Sign In</h2>
-                <div class="fields">
-                    <div class="social-field">
-                        <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                    <p>or sign in with your own credentials:</p>
-                    <div class="text-field">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <div class="text-field">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <div class="forgot-password">
-                        <a href="#">Forgot your password?</a>
-                    </div>
-                    <div class="button-field">
-                        <button>Sign In</button>
-                    </div>
+        </div>
+        <div class="option-container signup" id="option-container">
+            <div class="wrapper">
+                <div class="signin-option" id="signin-option">
+                    <h2 class="title-option">Not new here?</h2>
+                    <p class="description-option">Enter your account to discover people with
+                        passion for their craft.</p>
+                    <button class="button-option all" id="button-option-left" onclick="activateSignInForm()">Sign
+                        In</button>
+                </div>
+                <div class="signup-option move-left" id="signup-option">
+                    <h2 class="title-option">New here?</h2>
+                    <p class="description-option">Create a new account and explore a world of creativity. Join us today!
+                    </p>
+                    <button class="button-option all" id="button-option-right" onclick="activateSignUpForm()">Sign
+                        Up</button>
+                </div>
+            </div>
+            <div class="background-option signup" id="background-option">
+                <img src="background.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="main-container mobile">
+        <div class="signin-form on" id="signin-form">
+            <h2 class="title-form">Sign In</h2>
+            <div class="fields">
+                <div class="social-field">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p>or sign in with your own credentials:</p>
+                <div class="text-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="text-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <div class="button-field">
+                    <button>Sign In</button>
                 </div>
             </div>
         </div>
@@ -98,7 +147,38 @@
                 <img src="background.png">
             </div>
         </div>
-    </div>
+        <div class="signup-form off" id="signup-form">
+            <h2 class="title-form">Sign Up</h2>
+            <div class="fields">
+                <div class="social-field">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p>or sign up with your own credentials:</p>
+                <div class="text-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="text-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="text-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="text-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="button-field">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
 
     <script src="main.js"></script>
 </body>
