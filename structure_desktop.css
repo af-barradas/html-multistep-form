@@ -52,6 +52,10 @@
         width: 100%;
     }
 
+    .signup-form {
+        opacity: 0;
+    }
+
     .wrapper {
         z-index: 13;
         position: absolute;

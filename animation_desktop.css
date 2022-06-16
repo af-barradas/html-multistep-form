@@ -26,8 +26,8 @@
         transform: translate(0%);
     }
 
-    .signin-form,
-    .signup-form {
+    .on,
+    .off {
         transition-property: opacity;
         transition-duration: 0s;
         transition-delay: 0.5s;
