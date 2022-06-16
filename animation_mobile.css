@@ -1,1 +1,123 @@
-@media all and (max-width: 700px) {}
+@media all and (max-width: 700px) {
+
+    .form-container,
+    .option-container,
+    .background-option {
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .form-container.signup {
+        transform: translateY(-41%);
+    }
+
+    .option-container.signin {
+        transform: translateY(-234%);
+    }
+
+    .background-option.signin {
+        transform: translateY(47%);
+    }
+
+    .form-container.signin,
+    .option-container.signup,
+    .background-option {
+        transform: translateY(0%);
+    }
+
+    .on {
+        pointer-events: all;
+    }
+
+    .off {
+        pointer-events: none;
+    }
+
+    .background-option img {
+        animation: background-rotation 120s linear infinite;
+    }
+
+    @keyframes background-rotation {
+        from {
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    .signup-option.move-right {
+        animation: signup-move-right 0.75s ease-in-out 0s forwards;
+    }
+
+    @keyframes signup-move-right {
+        from {
+            pointer-events: none;
+            transform: translateY(0%);
+        }
+
+        to {
+            transform: translateY(150%);
+        }
+    }
+
+    .signup-option.move-left {
+        animation: signup-move-left 0.75s ease-in-out 0.25s forwards;
+    }
+
+    @keyframes signup-move-left {
+        0% {
+            transform: translateY(150%);
+        }
+
+        99% {
+            pointer-events: none;
+        }
+
+        100% {
+            pointer-events: all;
+            transform: translateY(0%);
+        }
+    }
+
+    .signin-option.move-right {
+        animation: signin-move-right 0.75s ease-in-out 0.25s forwards;
+    }
+
+    @keyframes signin-move-right {
+        0% {
+            transform: translateY(-150%);
+        }
+
+        99% {
+            pointer-events: none;
+        }
+
+        100% {
+            pointer-events: all;
+            transform: translateY(0%);
+        }
+    }
+
+    .signin-option.move-left {
+        animation: signin-move-left 0.75s ease-in-out 0s forwards;
+    }
+
+    @keyframes signin-move-left {
+        from {
+            transform: translateY(0%);
+        }
+
+        to {
+            transform: translateY(-150%);
+        }
+    }
+
+    .social-icon,
+    button {
+        pointer-events: inherit;
+        transition-duration: 0.25s;
+    }
+}
